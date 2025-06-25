@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+ 
+}
+
+#navbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  padding: 1dvh 0;
+  background: #351c1c;
+}
+
+.navbar_left {
+  display: flex;
+  justify-content: start;
+  gap: 0 0.5dvw;
+  padding: 2dvh 2dvw;
+  align-items: center;
+}
+
+.navbar_right {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2dvh 2dvw;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ---------------- HeroImg ------------------ */
+
+#hero_container {
+  display: grid;
+  background-image: linear-gradient(rgba(4, 18, 57, 0.618)),
+    url("../images/hero_img.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 92dvh;
+  justify-content: center;
+  align-content: center;
+}
+
+#hero_container h1:nth-of-type(1) {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+
+#hero_container h1:nth-of-type(2) {
+  font-size: 4rem;
+  color: rgb(117, 117, 223);
+  text-align: center;
+}
+
+#hero_container > p {
+  font-size: 1rem;
+  text-align: center;
+  width: 70%;
+  justify-self: center;
+  margin: 2dvh 0;
+  color: white;
+}
+
+.hero_container_job_btn {
+  display: flex;
+  justify-content: center;
+  gap: 0 2dvw;
+}
+
+.hero_container_job_btn > button:nth-of-type(1) {
+  background-color: white;
+}
+
+button {
+  display: flex;
+  align-content: center;
+  font-size: var(--fontSize);
+  padding: 2dvh 2dvw;
+  border-radius: 10px;
+  margin: 5dvh 0;
+  border: 1px solid transparent;
+  color: var(--primary-color);
+  align-self: center;
+  font-weight: var(--fontWeight);
+
+}
+
+.hero_container_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-self: space-around;
+}
